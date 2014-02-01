@@ -1,0 +1,62 @@
+html {height: 100%;}
+
+button, input, select, textarea, th, td {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* CONTAINER
+---------------------------------------------------------------------------------------------------- */
+.ctn {
+  margin: 0 auto;
+  width: 980px;
+}
+
+/* MODULE
+---------------------------------------------------------------------------------------------------- */
+.mod {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* COLUMNS
+---------------------------------------------------------------------------------------------------- */
+.cols {margin: 0 0 -20px -20px;}
+ 
+  /* Gutter */
+  .cols > [class*="cols-"] {
+    margin: 0 0 20px 20px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+ 
+  /* Width */
+  .cols-1 {width: 180px;}
+  .cols-2 {width: 380px;}
+  .cols-3 {width: 580px;}
+  .cols-4 {width: 780px;}
+  .cols-5 {width: 980px;}
+ 
+  /* Offset */
+  .offset-1 {margin-left: 200px;}
+  .offset-2 {margin-left: 400px;}
+  .offset-3 {margin-left: 600px;}
+  .offset-4 {margin-left: 800px;}
+  .offset-5 {margin-left: 1000px;}
+ 
+  .cols > .offset-1 {margin-left: 220px !important;}
+  .cols > .offset-2 {margin-left: 420px !important;}
+  .cols > .offset-3 {margin-left: 620px !important;}
+  .cols > .offset-4 {margin-left: 820px !important;}
+  .cols > .offset-5 {margin-left: 1020px !important;}
+
+/* BOTTOM INDENT
+---------------------------------------------------------------------------------------------------- */
+.m-b_2  {margin-bottom: 2rem !important;}
+.m-b_4  {margin-bottom: 4rem !important;}
+.m-b_6  {margin-bottom: 6rem !important;}
+.m-b_8  {margin-bottom: 8rem !important;}
+.m-b_10 {margin-bottom: 10rem !important;}
+.m-b_13 {margin-bottom: 13rem !important;}

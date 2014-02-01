@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<!--[if IE 9]><html lang="ru-RU" class="no-js ie9"><![endif]-->
+<html lang="ru-RU" class="no-js">
+  <head>
+    <title>Купить «профессиональный» статус / Мой профиль / RIW 2013</title>
+    <!--#include virtual="/views/layouts/_head.html" -->
+  </head>
+  <body class="page __inner __profile">
+
+    <!--#include virtual="/views/layouts/_alerts.html" -->
+    <div class="header-wrapper">
+      <div class="ctn">
+        <!--#include virtual="/views/layouts/_header.html" -->
+      </div>
+    </div>
+
+    <section id="section" class="section" role="main">
+      <div class="ctn">
+        <header class="cnt-header">
+          <div class="cnt-header_title">Мой профиль</div>
+        </header>
+        <section>
+          <div class="profile">
+            <!--#include virtual="/views/profile/_user.html" -->
+            <div class="profile_buy">
+              <h3 class="profile_buy_t">Купить «профессиональный» статус</h3>
+              <p class="profile_buy_tx">Сформируйте список участников. Важно чтобы каждый участник был зарегистрирован в системе RUNET-ID, где будет сохранена информация о статусах и участии.</p>
+              <div class="profile_buy_table">
+                <div class="cols">
+                  <!--#include virtual="/views/profile/_item.html" -->
+                  <!--#include virtual="/views/profile/_item.html" -->
+                  <!--#include virtual="/views/profile/_item.html" -->
+                  <input type="text" class="form_text cols-2" placeholder="Поиск по ФИО">
+                </div>
+              </div>
+              <div class="cols">
+                <div class="cols-3 mod">
+                  <p class="profile_buy_details">Для физических лиц доступна оплата с&nbsp;помощью банковских карт, электронных денег и&nbsp;PayPal. Представителям компаний смогут быть выставлены счета в&nbsp;автоматическом режиме.</p>
+                </div><div class="cols-1 mod">
+                  <div class="profile_buy_summ">5 900 Р</div>
+                </div><div class="cols-1 mod">
+                  <a href="/schedule.html" class="form_button __red cols-1">К оплате</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!--#include virtual="/views/layouts/_footer.html" -->
+    <!--#include virtual="/views/layouts/_dialogs.html" -->
+    <!--#include virtual="/views/layouts/bg/_inner.html" -->
+
+    <script type="text/javascript">
+      $(function() {
+        $(window).load(function() {
+          $('.profile_status_i').find('.profile_status_i_b').resizeToMaxHeight()
+        });
+      });
+    </script>
+
+  </body>
+</html>

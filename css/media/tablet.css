@@ -1,0 +1,13 @@
+.hidden-tablet,
+.visible-desktop {display: none !important;}
+.hidden-desktop,
+.visible-tablet  {display: inherit !important;}
+
+.background-img {display: none;}
+.page.__index {
+  background-image: url(/img/bg/index.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}

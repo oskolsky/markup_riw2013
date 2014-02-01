@@ -1,0 +1,66 @@
+<section class="program-filter">
+  <div class="ctn">
+    <form class="program-filter_form">
+      <div class="cols m-b_2">
+        <div class="cols-4 mod"><h5 class="program-filter_t">Блок-конферецнии</h5></div><div class="cols-1 mod program-filter_t"><h5 class="program-filter_t">Залы</h5></div>
+      </div>
+      <div class="cols">
+        <div class="cols-1 mod">
+          <label class="program-filter_label"><input type="checkbox" class="program-filter_checkbox"> TheRunet</label>
+          <label class="program-filter_label"><input type="checkbox" class="program-filter_checkbox"> Электронная торговля</label>
+          <label class="program-filter_label"><input type="checkbox" class="program-filter_checkbox"> Веб-аналитика</label>
+          <label class="program-filter_label"><input type="checkbox" class="program-filter_checkbox"> Интернет-бизнес</label>
+          <label class="program-filter_label"><input type="checkbox" class="program-filter_checkbox"> Сетевой эффект</label>
+        </div><div class="cols-1 mod">
+          <label class="program-filter_label"><input type="checkbox" class="program-filter_checkbox"> Технологии продаж</label>
+          <label class="program-filter_label"><input type="checkbox" class="program-filter_checkbox"> Digital-marketing</label>
+          <label class="program-filter_label"><input type="checkbox" class="program-filter_checkbox"> Crowdcon Краудсорсинг в России</label>
+          <label class="program-filter_label"><input type="checkbox" class="program-filter_checkbox"> Реклама</label>
+        </div><div class="cols-1 mod">
+          <label class="program-filter_label"><input type="checkbox" class="program-filter_checkbox"> Поисковая оптимизация</label>
+          <label class="program-filter_label"><input type="checkbox" class="program-filter_checkbox"> В поисках пользователя</label>
+          <label class="program-filter_label"><input type="checkbox" class="program-filter_checkbox"> Технологии</label>
+          <label class="program-filter_label"><input type="checkbox" class="program-filter_checkbox"> UpStart Conf</label>
+        </div><div class="cols-1 mod">
+          <label class="program-filter_label"><input type="checkbox" class="program-filter_checkbox"> Безопастность и регулирование</label>
+          <label class="program-filter_label"><input type="checkbox" class="program-filter_checkbox"> Интернет-технологии для бизнеса</label>
+          <label class="program-filter_label"><input type="checkbox" class="program-filter_checkbox"> Интернет-менеджмент</label>
+        </div><div class="cols-1 mod">
+          <label class="program-filter_label"><input type="checkbox" class="program-filter_checkbox"> Белый зал</label>
+          <label class="program-filter_label"><input type="checkbox" class="program-filter_checkbox"> Зелёный зал</label>
+          <label class="program-filter_label"><input type="checkbox" class="program-filter_checkbox"> Красный зал</label>
+          <label class="program-filter_label"><input type="checkbox" class="program-filter_checkbox"> Жёлтый зал</label>
+          <label class="program-filter_label"><input type="checkbox" class="program-filter_checkbox"> Синий зал</label>
+          <label class="program-filter_label"><input type="checkbox" class="program-filter_checkbox"> Оранжевый зал</label>
+        </div><div class="cols-1 mod">
+          <a href="#" class="form_button" style="left: 4px; position: relative; width: 152px;">Применить</a>
+        </div><div class="cols-1 mod">
+          <a href="#" class="form_reset">Очистить</a>
+        </div>
+      </div>
+    </form>
+    <div class="ta-r"><a href="#" class="program-filter_toggle">Фильтр</a></div>
+  </div>
+</section>
+
+<script type="text/javascript">
+  $(function() {
+    // DOCUMENT SCROLL
+    // ----------------------------------------------------------------------------------------------------
+    $(window).scroll(function() {
+      // Filter fixed
+      var
+        fixPointTop  = $('#fixpoint').offset().top,
+        headerWrapperHeight = $('.header-wrapper').outerHeight();
+      if (headerWrapperHeight < fixPointTop) {
+        $('.program-days.__normal').removeClass('__normal').addClass('__fix');
+        $('.program-filter').addClass('__fix');
+        $('#section').css({paddingTop: '100px'});
+      } else if (headerWrapperHeight >= fixPointTop) {
+        $('.program-days.__fix').removeClass('__fix').addClass('__normal');
+        $('.program-filter').removeClass('__fix');
+        $('#section').css({paddingTop: '0'});
+      }
+    });
+  });
+</script>

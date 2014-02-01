@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<!--[if IE 9]><html lang="ru-RU" class="no-js ie9"><![endif]-->
+<html lang="ru-RU" class="no-js">
+  <head>
+    <title>Мой профиль / RIW 2013</title>
+    <!--#include virtual="/views/layouts/_head.html" -->
+  </head>
+  <body class="page __inner __profile">
+
+    <!--#include virtual="/views/layouts/_alerts.html" -->
+    <div class="header-wrapper">
+      <div class="ctn">
+        <!--#include virtual="/views/layouts/_header.html" -->
+      </div>
+    </div>
+
+    <section id="section" class="section" role="main">
+      <div class="ctn">
+        <header class="cnt-header">
+          <div class="cnt-header_title">Мой профиль</div>
+        </header>
+        <section>
+          <div class="profile">
+            <!--#include virtual="/views/profile/_user.html" -->
+            <div class="profile_status">
+              <h3 class="profile_status_t">Изменить статус</h3>
+              <div class="cols">
+                <div class="cols-2 mod">
+                  <figure class="profile_status_i __virtual">
+                    <div class="profile_status_i_h">Виртуальный</div>
+                    <figcaption class="profile_status_i_b">
+                      <ul>
+                        <li>Посещение выставки «Интернет-2013»</li>
+                      </ul>
+                    </figcaption>
+                  </figure>
+                </div><div class="cols-2 mod">
+                  <figure class="profile_status_i __professional">
+                    <div class="profile_status_i_h">Профессиональный</div>
+                    <figcaption class="profile_status_i_b">
+                      <ul>
+                        <li>Посещение выставки «Интернет-2013»</li>
+                        <li>Участие в конференционной части</li>
+                        <li>Просмотр видеоматериалов</li>
+                        <li>Получение итоговых материалов</li>
+                        <li>Регистрация коллег</li>
+                        <li>Заказ питания</li>
+                      </ul>
+                      <div class="profile_status_price">1 000 Р</div>
+                      <div class="ta-c"><a href="/profile_pro.html" class="form_button __red cols-1">Купить статус</a></div>
+                    </figcaption>
+                  </figure>
+                </div><div class="cols-1 mod">
+                  <p class="tx __small __muted dot" style="margin-top: 380px;">С&nbsp;1&nbsp;сентября стоимость &laquo;Профессионального&raquo; статуса увеличится до&nbsp;5&nbsp;000&nbsp;Р</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!--#include virtual="/views/layouts/_footer.html" -->
+    <!--#include virtual="/views/layouts/_dialogs.html" -->
+    <!--#include virtual="/views/layouts/bg/_inner.html" -->
+
+    <script type="text/javascript">
+      $(function() {
+        $(window).load(function() {
+          $('.profile_status_i').find('.profile_status_i_b').resizeToMaxHeight()
+        });
+      });
+    </script>
+
+  </body>
+</html>
